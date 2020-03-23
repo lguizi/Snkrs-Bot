@@ -165,7 +165,7 @@ def select_shoe_size(driver, shoe_size):
 
     LOGGER.info("Selecting size from dropdown")
     driver.find_element_by_class_name("expanded").find_element_by_xpath(
-        "//button[text()='{}']".format(shoe_size)).click()
+        f"//button[text()='{shoe_size}']").click()
 
 
 def click_buy_button(driver):
